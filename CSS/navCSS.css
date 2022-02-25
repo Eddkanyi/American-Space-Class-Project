@@ -1,0 +1,16 @@
+.footerheading, .footerparagraph{
+    color: white;
+}
+.footerHr{
+    border: 1px solid whitesmoke;
+}
+.buttons{
+    color: hotpink;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footerheading{
+    text-align: center;
+}

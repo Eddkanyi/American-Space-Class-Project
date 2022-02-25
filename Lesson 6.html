@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Naviagtion Bars and Carousel</title>
+    <link rel="icon" href="Image/Logo%201.jpg">
+    <link rel="stylesheet" href="bootstrap-4.6.1-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="CSS/navCSS.css">
+    <script src="bootstrap-4.6.1-dist/js/jquery-3.6.0.js"></script>
+    <script src="bootstrap-4.6.1-dist/js/popper.min.js"></script>
+    <script src="bootstrap-4.6.1-dist/js/bootstrap.js"></script>
+</head>
+<body>
+<nav class="navbar navbar-expand-sm navbar-dark fixed-top" style="background-color: darkorchid">
+    <!-- Brand -->
+    <a class="navbar-brand" href="#">
+        <img src="Image/Logo%201.jpg" alt="Logo" width="50" height="50">
+    </a>
+    <!-- Toggler/collapsibe Button -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <!-- Links -->
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+            <a class="nav-link" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">About Us</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Our Partners</a>
+        </li>
+
+        <!-- Dropdown -->
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                Products and Services
+            </a>
+            <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">Polycarbonate Sheets</a>
+                <a class="dropdown-item" href="#">Sika Waterproofing</a>
+                <a class="dropdown-item" href="#">Tile Adhesives</a>
+                <a class="dropdown-item" href="#">Tile Grouts</a>
+                <a class="dropdown-item" href="#">Timber</a>
+                <a class="dropdown-item" href="#">Iron Sheets</a>
+            </div>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Clientells</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Gallery</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Careers</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Contact Us</a>
+        </li>
+    </ul>
+    <form class="form-inline" action="/action_page.php">
+        <input class="form-control mr-sm-2" type="text" placeholder="Search">
+        <button class="btn btn-primary" type="submit">Search</button>
+    </form>
+    </div>
+</nav>
+<div id="demo" class="carousel slide" data-ride="carousel">
+
+    <!-- Indicators -->
+    <ul class="carousel-indicators">
+        <li data-target="#demo" data-slide-to="0" class="active"></li>
+        <li data-target="#demo" data-slide-to="1"></li>
+        <li data-target="#demo" data-slide-to="2"></li>
+        <li data-target="#demo" data-slide-to="3"></li>
+        <li data-target="#demo" data-slide-to="4"></li>
+    </ul>
+
+    <!-- The slideshow -->
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="Image/slides/Mjengo.jpg" alt="mjei" width="100%" height="650">
+            <div class="carousel-caption">
+                <h3>Construction Support</h3>
+                <hr>
+                <p class="text-justify"><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores consectetur deserunt eligendi, iste laboriosam perspiciatis vel voluptatum. Iusto modi nam officiis praesentium recusandae? Beatae magni molestiae nemo non totam voluptatibus!</span>
+                </p>
+        </div>
+        </div>
+        <div class="carousel-item">
+            <img src="Image/slides/Mjengo1.png" alt="mjei" width="100%" height="650">
+            <div class="carousel-caption">
+                <h3>Architectural Design</h3>
+                <hr>
+                <p class="text-justify"><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores consectetur deserunt eligendi, iste laboriosam perspiciatis vel voluptatum. Iusto modi nam officiis praesentium recusandae? Beatae magni molestiae nemo non totam voluptatibus!</span>
+                </p>
+            </div>
+        </div>
+            <div class="carousel-item">
+            <img src="Image/slides/mjengo2.jpg" alt="mjei" width="100%" height="650">
+                <div class="carousel-caption">
+                    <h3>Labor Force</h3>
+                    <hr>
+                    <p class="text-justify"><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores consectetur deserunt eligendi, iste laboriosam perspiciatis vel voluptatum. Iusto modi nam officiis praesentium recusandae? Beatae magni molestiae nemo non totam voluptatibus!</span>
+                    </p>
+                </div>
+        </div>
+        <div class="carousel-item">
+            <img src="Image/slides/mjengo3.jpg" alt="mjei" width="100%" height="650">
+            <div class="carousel-caption">
+                <h3>Structural Engineering</h3>
+                <hr>
+                <p class="text-justify"><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores consectetur deserunt eligendi, iste laboriosam perspiciatis vel voluptatum. Iusto modi nam officiis praesentium recusandae? Beatae magni molestiae nemo non totam voluptatibus!</span>
+                </p>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="Image/slides/mjengo4.jpg" alt="mjei" width="100%" height="650">
+            <div class="carousel-caption">
+                <h3>Material Supply</h3>
+                <hr>
+                <p class="text-justify"><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores consectetur deserunt eligendi, iste laboriosam perspiciatis vel voluptatum. Iusto modi nam officiis praesentium recusandae? Beatae magni molestiae nemo non totam voluptatibus!</span>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="carousel-control-prev" href="#demo" data-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+    </a>
+    <a class="carousel-control-next" href="#demo" data-slide="next">
+        <span class="carousel-control-next-icon"></span>
+    </a>
+
+</div>
+<nav class="navbar navbar-expand-sm navbar-dark" style="background-color: darkorchid;">
+    <div class="inner-footer">
+        <div class="row">
+            <div class="col-md-3">
+                <h5 class="footerheading">About US</h5>
+                <hr class="footerHr">
+                <p class="footerparagraph"><span> mollitia, praesentium repellat similique soluta voluptate.
+                </span><span>Accusantium blanditiis consequuntur cumque dignissimos doloruia, tenetur voluptatum.</span><span>Aliquid animi autem commodi consequuntur cupiditate est et excepturiexercitationem fugit incidunt itaque, maiores necessitatibus nihil numquamobcaecati officiis possimus, quaerat quam, quo reprehenderit sed soluta temporibus unde vero voluptates?</span></p>
+                <div class="buttons">
+                    <a class="btn btn-success" href="#">Read More</a>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <h5 class="footerheading">Our Products</h5>
+                <hr class="footerHr">
+                <p class="footerparagraph"><span> mollitia, praesentium repellat similique soluta voluptate.
+                </span><span>Accusantium blanditiis consequuntur cumque dignissimos doloruia, tenetur voluptatum.</span><span>Aliquid animi autem commodi consequuntur cupiditate est et excepturiexercitationem fugit incidunt itaque, maiores necessitatibus nihil numquamobcaecati officiis possimus, quaerat quam, quo reprehenderit sed soluta temporibus unde vero voluptates?</span></p>
+            <div class="buttons">
+                <a class="btn btn-success" href="#">Read More</a>
+            </div>
+            </div>
+            <div class="col-md-3">
+                <h5 class="footerheading">Location</h5>
+                <hr class="footerHr">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.8196588559686!2d36.81940731420112!3d-1.281974185981715!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f10d45af411ad%3A0x6123ae4b4551b201!2sBazaar%20Plaza%2C%20Moi%20Ave%2C%20Nairobi!5e0!3m2!1sen!2ske!4v1645691208438!5m2!1sen!2ske" width="100%" height="200" style="border:2px solid darkorchid; border-radius: 15px" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+            <div class="col-md-3">
+                <h5 class="footerheading">Contact Us</h5>
+                <hr class="footerHr">
+                <p class="footerparagraph"><span> mollitia, praesentium repellat similique soluta voluptate.
+                </span><span>Accusantium blanditiis consequuntur cumque dignissimos doloruia, tenetur voluptatum.</span><span>Aliquid animi autem commodi consequuntur cupiditate est et excepturiexercitationem fugit incidunt itaque, maiores necessitatibus nihil numquamobcaecati officiis possimus, quaerat quam, quo reprehenderit sed soluta temporibus unde vero voluptates?</span></p>
+            <div class="buttons">
+                <a class="btn btn-success" href="#">Read More</a>
+            </div>
+            </div>
+        </div>
+
+    </div>
+
+</nav>
+</body>
+</html>
